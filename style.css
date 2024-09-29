@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+scroll-behavior: smooth;
+
+}
+header{
+    background-color:rgba(253, 232, 0, 0.975);
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+}
+.logo{
+    text-decoration: none;
+    color: blue;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size:30px;
+
+}
+.navgation a{
+color: blue;
+text-decoration: none;
+text-transform: uppercase;
+font-size: 1.1em;
+font-weight: 500;
+padding-left:30px ; 
+}
+.navgation a:hover{
+    color: aqua;
+}
+section{
+    padding: 100px 200px;
+}
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display:flex;
+    align-items: center ;
+    background: url(./imges/back.png) no-repeat;
+    background-color: rgb(6, 0, 125);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+.main h2{
+    color: rgb(255, 234, 0);
+font-size: 1.4em;
+font-weight: 500;
+
+}
+.main h2 span{
+    display: inline block;
+    margin: 10px;
+    color:  rgb(255, 234, 0);
+}
+.main h3{
+    color:rgb(251, 255, 0);
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.main-btn{
+    color: rgb(44, 0, 155);
+    background-color: rgb(22, 0, 102);
+    text-decoration: none;
+    font-size: 0.7em;
+    font-weight: 500;
+    display: inline-block;
+    padding: 0.837em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    transition: 0.4s ease;
+   
+
+}
+.main-btn:hover{
+    color:rgb(246, 1, 1);
+    transform: scale(1.1);
+}
+.main a{
+    border-radius: 15px;
+    background-color:rgb(22, 0, 102) ;
+    font-size: 1.5em;
+    color: aliceblue;
+    transition: 0.4s ease;
+    display: inline-block;
+
+}
+.main a:hover{
+    color:rgb(212, 255, 0);
+    transform: scale(1.1);
+}
+
+.titel {
+    display: flex;
+    justify-content: center;
+    color: blue;
+    font-size: 2,2em;
+    font-weight: 800;
+    margin-bottom : 25px ;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.card{
+    background-color: white;
+    box-shadow:0 5px 30px  rgba(0, 102, 255,50%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.4s ease;
+}
+.card:hover{
+    transform:scale(1.1) ;
+}
+.icon{
+   color: blue;
+    text-align: center;
+
+}
+.info{
+    text-align: center;
+}
+.info h3{
+    color:blue ;
+    font-size:1.5em ;
+    font-weight: 600;
+    margin: 10px;
+}
+.projects{
+    color: white;
+    background-color: rgb(22, 0, 102) ;
+}
+.projects .content{
+margin-top: 30px;
+}
+.proj-card{
+    color: yellow;
+}
+.proj-card h1{
+    color: aqua;
+}
+.cards-cont{
+    background-color:rgb(251, 255, 0) ;
+}
+.cards-cont .title{
+    display: flex;
+    justify-content:space-between;
+    text-transform: uppercase;
+    font-size:800 ;
+    margin-top:10px ;
+    color: rgb(0, 66, 132);
+}
+.fotter{
+    padding: 2em;
+    display: flex;
+    background-color:rgb(0, 58, 157) ;
+
+}
+.fotter p{
+    color:yellow;
+}
+.fotter .social-icons a{
+    color: wheat;
+ margin-right: 10px ;
+}
+
+@media (max-width:1023px){
+header{
+    padding: 12px 20px;
+}
+.navgation a{
+    padding-left:10px ;
+}
+.titel{
+    font-size: 1.5em;
+
+}
+section{
+    padding:70px 20px;
+
+}
+.main-content h2{
+    font-size: 1em;
+}
+.main-content h3{
+    font-size: 1.5em;
+}
+.content{
+    flex-direction: column;
+    align-items: center;
+}
+
+}
+@media (max-width:641px){
+
+    .body{
+        font-size: 12px;
+    }
+    .main-content h2{
+        font-size: 0.7em;
+    }
+    .main-content h3{
+        font-size:1.4em;
+    }
+
+}
+@media (max-width:300px){
+    .body{
+        font-size: 10px;
+    }
+
+}
